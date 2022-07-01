@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function breakLine(n){
+
+        for(let i=n; i<i; i++){
+            document.write("<br>");
+        }
+
+    }
+
+    function showInfo(phrase){
+
+        document.write(phrase);
+        breakLine(1);
+
+    }
+
+    function imc(height, weight){
+
+        return weight/(Math.pow(height,2));
+
+    }
+
+    var name = prompt("Informe o seu nome");
+
+    var height = prompt(name + ", informe sua altura");
+    var weight = prompt(name + ", informe seu peso")
+
+    document.write(name + ", o seu IMC é " + imc(height, weight));
+
+</script>
