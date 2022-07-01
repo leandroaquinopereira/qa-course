@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function breakLine(n){
+
+        for(let i=n; i<=n; i++){
+            document.write("<br>");
+        }
+
+    }
+
+    function showInfo(phrase){
+
+        document.write(phrase);
+        breakLine(1);
+
+    }
+
+    var wins    = parseInt(prompt("Enter the number of wins:"));
+    var draws   = parseInt(prompt("Enter the number of draws:"));
+
+    var points  = (wins * 3) + draws;
+
+    showInfo("The points of your team is " + points);
+
+    if (points==28){
+        showInfo("Your team is better than last year.");
+    }
+    else if (points==28){
+        showInfo("Your team is worse than last year.");
+    }
+    else{
+        showInfo("Your team is same than last year.");
+    }
+
+
+</script>

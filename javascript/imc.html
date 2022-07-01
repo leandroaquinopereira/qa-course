@@ -4,7 +4,7 @@
 
     function breakLine(n){
 
-        for(let i=n; i<i; i++){
+        for(let i=n; i<=n; i++){
             document.write("<br>");
         }
 
@@ -26,8 +26,20 @@
     var name = prompt("Informe o seu nome");
 
     var height = prompt(name + ", informe sua altura");
-    var weight = prompt(name + ", informe seu peso")
+    var weight = prompt(name + ", informe seu peso");
 
-    document.write(name + ", o seu IMC é " + imc(height, weight));
+    var imc = imc(height, weight);
+
+    showInfo(name + ", o seu IMC é " + imc);
+
+    if(imc < 18.5){
+        showInfo("Below recommended");
+    }
+    else if(imc > 35){
+        showInfo("Above recommended");
+    }
+    else{
+        showInfo("Within the recommended")
+    }
 
 </script>
